@@ -23,7 +23,7 @@
 
 因当前 API 设计还未涉及太多版本问题， 暂时将 API 版本置于请求 header 头内，字段为" x-api-version",版本为 1，如下图：
 
-![Snip20160307_1](media/14573343658105/Snip20160307_1.png)￼
+![Snip20160307_1](./img/Snip20160307_1.png)￼
 
 服务器端应该检测 API 请求版本，若 Request headers 没有 `x-api-version` 应该拒绝请求，版本错误应进行相应处理。
 

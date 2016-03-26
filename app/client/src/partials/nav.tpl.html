@@ -1,0 +1,16 @@
+<div class="ng-nav-wrapper ng-nav-theme-blue" ng-controller="NavCtrl">
+  <div class="ng-nav-container">
+    <div class="ng-nav-log">
+      <a href="{{baseUrl}}/#/"><img src="{{baseUrl}}/img/logo.png" alt="" class="inline"></a>
+      <a href="{{baseUrl}}/#/" class="ng-nav-title">高考选科</a>
+    </div>
+    <ul class="ng-nav-list"  auto-active>
+      <li  ng-repeat="url in urls[currentUserType-1]"> 
+        <a href="{{baseUrl}}{{url.href}}">{{url.name}}</a>
+      </li> 
+    </ul>
+
+  </div>
+
+</div>
+

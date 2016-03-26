@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <meta name="description" content="DEMO">
+    <meta name="keywords" content="DEMO">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon">
+
+
+
+    <!-- 第三方css文件   -->
+    <link rel="stylesheet" href="../static/ng-vendor/lzx/lzx.common-0.1.0.min.css">
+
+
+
+
+    <!-- build:css css/app.mini.css -->
+
+    <!-- inject:css -->
+    <!-- 将 src/js 和 src/partials 文件夹下所有js 插入此处  -->
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <div class="conatiner">
+        <div ng-include="'partials/nav.tpl.html'"></div>
+        <div ng-view class="w"></div>
+    </div>
+    <!-- 第三方js文件 -->
+    <script src="../static/ng-vendor/jquery/jquery-1.8.3.min.js"></script>
+    <script src="../static/ng-vendor/angular-1.2.29/angular.min.js"></script>
+    <script src="../static/ng-vendor/angular-1.2.29/angular-route.min.js"></script>
+    <script src="../static/ng-vendor/angular-1.2.29/angular-animate.min.js"></script>
+
+
+
+    <!-- build:js js/app.mini.js -->
+    <!-- inject:js -->
+    <!-- 将 src/js 和 src/partials 文件夹下所有js 插入此处  -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+
+
+
+</body>
+
+</html>

@@ -34,14 +34,14 @@ ps: 使用HTTP Header时，优先使用合适的标准头属性。用X-作为前
 
 路径又称"终点"（endpoint），表示API的具体网址，路由信息。
 
-在 RESTful 架构中，每个路径代表一种资源（resource），路径指向的应该是唯一的资源对象。所以路径中不能有动词，只能有名词。动作应该通过 http 动词（get,delete,put,post等）来表达。一般来说，数据库中的表都是同种记录的"集合"（collection），故API中的名词也应该使用复数。
+在 RESTful 架构中，每个路径代表一种资源（resource），路径指向的应该是唯一的资源对象。所以路径中不能有动词，只能有名词。动作应该通过 http 动词（get,delete,put,post等）来表达。一般来说，数据库中的表都是同种记录的"集合"(collection)，故API中的名词也应该使用复数。
 
 RESTful 接口永远不要直接下行图片，图片文件等内容可走单独的 download 接口，通过 URL 去 CDN 服务器或者自己的文件服务器下载到本地。
 
 - 使用短的、完整的并且是大家都知道的单词。如果某个部分中有一个破折号或是一个特殊的字符的话，这个词就有可能太长；
 - 路径只能是名词，且应该是复数；
 - 尽可能清晰的表达资源之间的关系；
-<div style="display:none">- **使用中划线`-`，不使用`_`**；</div>
+- **使用中划线`-`，不使用`_`**；
 - 参数列表应该被 encode 过。
 
 如下路径设计所示：
@@ -127,9 +127,9 @@ RESTful 接口永远不要直接下行图片，图片文件等内容可走单独
 
 - **条件请求**
 
-  * 304 **Not Modified** : 资源自从上次请求后没有再次发生变化，主要使用场景在于实现[数据缓存](#user-content-数据缓存)
-  * 409 **Conflict** : 请求操作和资源的当前状态存在冲突。主要使用场景在于实现[并发控制](#user-content-并发控制)
-  * 412 **Precondition Failed** : 服务器在验证在请求的头字段中给出先决条件时，没能满足其中的一个或多个。主要使用场景在于实现[并发控制](#user-content-并发控制)
+  * 304 **Not Modified** : 资源自从上次请求后没有再次发生变化，主要使用场景在于实现数据缓存
+  * 409 **Conflict** : 请求操作和资源的当前状态存在冲突。主要使用场景在于实现并发控制
+  * 412 **Precondition Failed** : 服务器在验证在请求的头字段中给出先决条件时，没能满足其中的一个或多个。主要使用场景在于实现并发控制
 
 - **客户端错误**
 
@@ -414,15 +414,16 @@ Response Body:
 - [RESTful API 设计参考文献列表](https://github.com/aisuhua/restful-api-design-references)
 - [RESTful最佳实践](http://arccode.net/2015/02/26/RESTful%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/)
 - [URL的设计](http://article.yeeyan.org/view/213582/200363/)
+- [json-server](https://github.com/typicode/json-server)
 
 ## 13. 更多资料
+
 * [What's the difference between ISO 8601 and RFC 3339 Date Formats?](http://stackoverflow.com/questions/522251/whats-the-difference-between-iso-8601-and-rfc-3339-date-formats)
 * [JSON风格指南 - Google 风格指南（中文版）](https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md#%E5%B1%9E%E6%80%A7%E5%80%BC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
 * [RFC 7231 中对请求方法的定义](http://tools.ietf.org/html/rfc7231#section-4.3)
 * [RFC 5789](http://tools.ietf.org/html/rfc5789) - PATCH 方法的定义
 * [维基百科](http://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE#.E8.AF.B7.E6.B1.82.E6.96.B9.E6.B3.95)
 * 关于 `Content-Type` 更多信息可查看 [这里](http://TODO)
-
 * [RFC 里的状态码列表](http://tools.ietf.org/html/rfc7231#page-49)
 * [RFC 4918](http://tools.ietf.org/html/rfc4918) - 422 状态码的定义
 * [RFC 6585](http://tools.ietf.org/html/rfc6585) - 新增的四个 HTTP 状态码，[中文版](http://www.oschina.net/news/28660/new-http-status-codes)

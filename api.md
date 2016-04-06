@@ -437,6 +437,6 @@ Response Body:
 * [Httpbis Status Pages](https://tools.ietf.org/wg/httpbis/)
 * [所有在 IANA 注册的消息头和相关标准的列表](http://www.iana.org/assignments/message-headers/message-headers.xhtml)
 
-**author: huhb**
-**date: 20160405**
+- **author: huhb**
+- **date: 20160405**
 

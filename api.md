@@ -425,7 +425,7 @@ Response Body:
 * [RFC 7231 中对请求方法的定义](http://tools.ietf.org/html/rfc7231#section-4.3)
 * [RFC 5789](http://tools.ietf.org/html/rfc5789) - PATCH 方法的定义
 * [维基百科](http://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE#.E8.AF.B7.E6.B1.82.E6.96.B9.E6.B3.95)
-* 关于 `Content-Type` 更多信息可查看 [这里](http://TODO)
+* [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 * [RFC 里的状态码列表](http://tools.ietf.org/html/rfc7231#page-49)
 * [RFC 4918](http://tools.ietf.org/html/rfc4918) - 422 状态码的定义
 * [RFC 6585](http://tools.ietf.org/html/rfc6585) - 新增的四个 HTTP 状态码，[中文版](http://www.oschina.net/news/28660/new-http-status-codes)

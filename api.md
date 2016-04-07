@@ -72,7 +72,7 @@ RESTful 接口永远不要直接下行图片，图片文件等内容可走单独
 |GET|/posts?sort=-priority| 所有文章按照优先级倒序|
 |GET|/posts?title=demo&author=pm| 获取名字为 demo  作者为 pm 的文章列表|
 |GET|/posts?sort=votes&order=asc|获取所有文章按投票数升序排序|
-|GET|/posts?page=10&per_page=100|获取第10页最多100篇文章 TODO|Get
+|GET|/posts?page=10&per_page=100|获取第10页最多100篇文章|Get
 
 
 ## 5. HTTP 请求方法
@@ -383,7 +383,7 @@ Response Body:
 
 
 
-## 11.其他资料
+## 10.其他资料
 
 - API 文档生成工具：
 
@@ -404,7 +404,7 @@ Response Body:
 
 
 
-## 12.参考：
+## 11.参考：
 
 
 - [HTTP API 设计指南](https://github.com/ZhangBohan/http-api-design-ZH_CN)
@@ -418,7 +418,7 @@ Response Body:
 - [URL的设计](http://article.yeeyan.org/view/213582/200363/)
 - [json-server](https://github.com/typicode/json-server)
 
-## 13. 更多资料
+## 12. 更多资料
 
 * [What's the difference between ISO 8601 and RFC 3339 Date Formats?](http://stackoverflow.com/questions/522251/whats-the-difference-between-iso-8601-and-rfc-3339-date-formats)
 * [JSON风格指南 - Google 风格指南（中文版）](https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md#%E5%B1%9E%E6%80%A7%E5%80%BC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
